@@ -16,7 +16,9 @@
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">My Work</a></li>
-            <li><a href="#">Resume</a></li>
+            <li>
+              <a href="./imgs/Resume.pdf" target="_blank">Resume</a>
+            </li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact Me</a></li>
           </ul>
@@ -37,7 +39,7 @@
     <section id="My Work">
       <div class="container">
         <div id="Top-Page">
-          <h1>Portfolio</h1>
+          <h1 class="title">Portfolio</h1>
           <h6>View some of my recent projects.</h6>
         </div>
         <div class="project-image">
@@ -78,7 +80,53 @@
         </div>
       </div>
     </section>
-
+    <!-- About Page -->
+    <section id="About">
+      <div class="container">
+        <h1 class="title">About Me</h1>
+        <!-- Do the same animation as the projects part -->
+        <div class="project-image">
+          <!-- Fix width in css and make responsive -->
+          <img src="./imgs/MyPicture.jpg" alt="My Picture" width="300px" />
+        </div>
+        <div class="project-description">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            aperiam autem sint totam, perspiciatis perferendis ut amet
+            temporibus commodi voluptatibus?
+          </p>
+        </div>
+        <!-- Maybe Remove this?
+        <div class="social-media">
+          <h2>Social Media</h2>
+          Learn how to create icon buttons then do github, linked in below.
+        </div> -->
+      </div>
+    </section>
+    <section id="ContactMe">
+      <div class="container">
+        <h1 class="title">Contact Me</h1>
+        <form action="">
+          <label for="fname"></label>
+          <input type="text" id="fname" name="firstname" placeholder="Name" />
+          <label for="femail"></label>
+          <input
+            type="text"
+            id="femail"
+            name="firstname"
+            placeholder="Enter you email.."
+          />
+          <label for="subject"></label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Message"
+          ></textarea>
+          <!-- Do a robot check like 7 + 2 with a little backend -->
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
     <!-- Footer Notes -->
     <footer>
       <div class="bottom-of-page">
