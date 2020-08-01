@@ -10,15 +10,17 @@ body {
   overflow: hidden;
 }
 
-#container {
-  width: 97%;
+#topBar {
+  padding: 10px;
+  padding-bottom: 5px;
+  position: fixed;
+  width: 100%;
   margin: auto;
-  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 header {
   color: white;
-  padding-top: 10px;
   min-height: 70px;
   font-size: 1.2em;
 }
@@ -35,11 +37,12 @@ header ul {
 
 header li {
   display: inline;
-  padding: 0 20px 0 20px;
+  padding: 0 1.3em 0 1.3em;
 }
 
 #signature {
   float: left;
+  padding-left: 20px;
 }
 
 #signature h1 {
@@ -48,7 +51,8 @@ header li {
 
 header nav {
   float: right;
-  margin-top: 10px;
+  padding-right: 30px;
+  padding-top: 5px;
 }
 
 #Home {
