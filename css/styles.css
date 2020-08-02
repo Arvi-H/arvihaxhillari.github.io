@@ -1,5 +1,6 @@
+/* General */
 body {
-  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  font: 15px/1.5 "Oxygen Mono", monospace, Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -9,22 +10,9 @@ body {
   margin: auto;
   overflow: hidden;
 }
+/* End of General */
 
-#topBar {
-  padding: 10px;
-  padding-bottom: 5px;
-  position: fixed;
-  width: 100%;
-  margin: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-header {
-  color: white;
-  min-height: 70px;
-  font-size: 1.2em;
-}
-
+/* Nav Bar */
 header a {
   color: white;
   text-decoration: none;
@@ -40,6 +28,22 @@ header li {
   padding: 0 1.3em 0 1.3em;
 }
 
+header {
+  color: #e9e6e0;
+  min-height: 70px;
+  font-size: 1.2em;
+}
+
+#topBar {
+  padding: 10px;
+  padding-bottom: 5px;
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  background-color: rgba(2, 2, 2, 0.8);
+  z-index: 1;
+}
+
 #signature {
   float: left;
   padding-left: 20px;
@@ -47,6 +51,7 @@ header li {
 
 #signature h1 {
   margin: 0;
+  font-weight: normal;
 }
 
 header nav {
@@ -54,6 +59,7 @@ header nav {
   padding-right: 30px;
   padding-top: 5px;
 }
+/* End of Nav Bar */
 
 #Home {
   height: 100vh;
@@ -61,4 +67,53 @@ header nav {
   background: url(../imgs/background3.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#nameDiv {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.job-title {
+  display: inline-block;
+  background-color: rgba(24, 26, 26, 1);
+  border: solid 4px #e9e6e0;
+}
+
+.job-title h1,
+h2 {
+  color: #e9e6e0;
+  font-size: 2em;
+  font-weight: normal;
+  padding: 0.8em;
+  padding: 0em 0.8em;
+}
+
+.job-title h1 {
+  margin: 20px 0px 0.1px 0px;
+  font-size: 250%;
+}
+
+.job-title h2 {
+  margin: 0.1px 0px 30px 0px;
+  font-size: 150%;
+}
+
+#main-buttons a {
+  text-decoration: none;
+  color: #e9e6e0;
+  border: solid 0.5px #e9e6e0;
+  font-size: 1.2em;
+  padding: 8px;
+}
+
+#gitBtn {
+  margin-right: 5%;
+}
+
+#main-buttons {
+  margin-bottom: 7%;
 }
