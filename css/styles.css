@@ -61,6 +61,7 @@ header nav {
 }
 /* End of Nav Bar */
 
+/* Landing Page */
 #Home {
   height: 100vh;
   width: 100%;
@@ -116,4 +117,37 @@ h2 {
 
 #main-buttons {
   margin-bottom: 7%;
+}
+
+/* End of Landing Page */
+
+/* My Work Page */
+
+#My-Work {
+  height: 300vh;
+  width: 100%;
+}
+
+/* fix tomorrow */
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.project-item:last-child {
+  margin-bottom: 0;
+}
+
+.project-image {
+  width: 50rem;
+  flex: 1;
+}
+.project-description {
+  flex: 1;
+}
+
+.margin-right {
+  margin-right: 5rem;
 }
