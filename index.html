@@ -1,95 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- Landing Page -->
-    <section id="Home">
-      <header>
-        <div class="container" id="topBar">
-          <div id="signature">
-            <!-- Put signature/logo here; For now, an h1 will do -->
-            <a href="#"><h1>ARVI HAXHILLARI</h1></a>
-          </div>
-          <!-- TODO css navigation bar that appears when i scroll up -->
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#My-Work">My Work</a></li>
-              <li>
-                <a href="./imgs/Resume.pdf" target="_blank">Resume</a>
-              </li>
-              <li><a href="#About">About</a></li>
-              <li><a href="#Contact Me">Contact Me</a></li>
-            </ul>
-          </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Landing Page -->
+  <section id="Home">
+    <header>
+      <div class="container" id="topBar">
+        <div id="signature">
+          <!-- Put signature/logo here; For now, an h1 will do -->
+          <a href="#">
+            <h1>ARVI HAXHILLARI</h1>
+          </a>
         </div>
-      </header>
-      <div class="container" id="nameDiv">
-        <div class="job-title">
-          <h1>Arvi Haxhillari</h1>
-          <h2>Software Engineer/Web Developer</h2>
-          <div id="main-buttons">
-            <a href="https://github.com/Arvi-H" target="_blank" id="gitBtn"
-              >GitHub</a
-            >
-            <a href="./imgs/Resume.pdf" target="_blank" id="resumeBtn"
-              >Resume</a
-            >
-          </div>
+        <!-- TODO css navigation bar that appears when i scroll up -->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#MyWorkFooter">My Work</a></li>
+            <li>
+              <a href="./imgs/Resume.pdf" target="_blank">Resume</a>
+            </li>
+            <li><a href="#gotodiv2">About</a></li>
+            <li><a href="#gotodiv3">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container" id="nameDiv">
+      <div class="job-title">
+        <h1>Arvi Haxhillari</h1>
+        <h2>Software Engineer/Web Developer</h2>
+        <div id="main-buttons">
+          <a href="https://github.com/Arvi-H" target="_blank" id="gitBtn">GitHub</a>
+          <a href="./imgs/Resume.pdf" target="_blank" id="resumeBtn">Resume</a>
         </div>
       </div>
-    </section>
-    <!-- My Work -->
-    <section id="My-Work">
-      <div class="container">
-        <div id="Top-Page">
-          <h1 class="title">Portfolio</h1>
-          <h5>View some of my recent projects.</h5>
+    </div>
+    <footer class="footer">
+      <div id="MyWorkFooter"></div>
+    </footer>
+  </section>
+  <!-- My Work -->
+  <section id="My-Work">
+    <div class="overlay"></div>
+
+    <div class="container" id="myWorkContainer">
+      <div id="Top-Page">
+        <h1 class="title">Portfolio</h1>
+        <h5>View some of my recent projects.</h5>
+      </div>
+      <div class="project-item">
+        <div class="project-image">
+          <img src="./imgs/TicTacToe.jpg" alt="TicTacToe" class="myWorkImgs" />
         </div>
-        <div class="project-item">
-          <div class="project-image">
-            <img src="./imgs/TicTacToe.jpg" alt="TicTacToe" />
-          </div>
-          <div class="project-description">
-            <h2>Tic Tac Toe Game</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur amet non dolorum, iste vel possimus. Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Dolor perferendis?
-            </p>
-            <!-- TODO - Button for View Code -->
-          </div>
+        <div class="project-description">
+          <h2>Tic Tac Toe Game</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur amet non dolorum, iste vel possimus. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Dolor perferendis?
+          </p>
+          <!-- TODO - Button for View Code -->
         </div>
-        <div class="project-item">
-          <div class="project-description">
-            <h2>2020 Robot // fix</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur amet non dolorum, iste vel possimus. Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Dolor perferendis?
-            </p>
-            <!-- TODO - Button for View Code -->
-          </div>
-          <div class="project-image">
-            <img
-              src="./imgs/2019-Robot.png"
-              alt="2020Robot"
-              class="myWorkImg"
+      </div>
+      <div class="project-item">
+        <div class="project-description">
+          <h2>2020 Robot // fix</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur amet non dolorum, iste vel possimus. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Dolor perferendis?
+          </p>
+          <!-- TODO - Button for View Code -->
+        </div>
+        <div class="project-image">
+          <img src="./imgs/2019-Robot.png" alt="2020Robot" class="myWorkImgs
             />
           </div>
         </div>
-        <div class="project-item">
+        <div class=" project-item">
           <div class="project-image">
-            <img
-              src="./imgs/2019-Robot.png"
-              alt="2019Robot"
-              class="myWorkImg"
-            />
+            <img src="./imgs/2019-Robot.png" alt="2019Robot" class="myWorkImgs" />
           </div>
           <div class="project-description">
             <h2>2019 Robot //Fix</h2>
@@ -102,42 +100,47 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- About Page -->
-    <section id="About">
-      <div class="container">
+    </div>
+
+  </section>
+  <!-- About Page -->
+  <section id="About">
+    <div class="container">
+      <div class="gotodiv1">
+        <div id="gotodiv2"></div>
+      </div>
+      <div id="abtdiv">
         <h1 class="title">About Me</h1>
         <!-- Do the same animation as the projects part -->
-        <div class="project-image">
-          <!-- Fix width in css and make responsive -->
-          <img src="./imgs/MyPicture.jpg" alt="My Picture" width="300px" />
-        </div>
-        <div class="project-description">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            aperiam autem sint totam, perspiciatis perferendis ut amet
-            temporibus commodi voluptatibus?
-          </p>
-        </div>
-        <!-- Maybe Remove this?
+      </div>
+      <div class="project-image">
+        <!-- Fix width in css and make responsive -->
+        <img src="./imgs/MyPicture1.jpg" alt="My Picture" width="300px" />
+      </div>
+      <div class="project-description">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+          aperiam autem sint totam, perspiciatis perferendis ut amet
+          temporibus commodi voluptatibus?
+        </p>
+      </div>
+      <!-- Maybe Remove this?
         <div class="social-media">
           <h2>Social Media</h2>
           Learn how to create icon buttons then do github, linked in below.
         </div> -->
-      </div>
-    </section>
-    <section id="Contact Me">
-      <div class="container">
+    </div>
+    </div>
+  </section>
+  <section id="Contact-Me">
+    <div class="container">
+      <div class="gotodiv1">
+        <div id="gotodiv3">
+        </div>
         <h1 class="title">Contact Me</h1>
         <form action="">
           <label for="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="firstname"
-            placeholder="Enter your name..."
-            required
-          />
+          <input type="text" id="name" name="firstname" placeholder="Enter your name..." required />
           <!-- <label for="flastname"></label>
           <input
             type="text"
@@ -147,34 +150,22 @@
             required
           /> -->
           <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email..."
-            required
-          />
+          <input type="email" id="email" name="email" placeholder="Enter your email..." required />
           <label for="subject">Message:</label>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Type something..."
-            cols="10"
-            rows="10"
-            required
-          ></textarea>
+          <textarea id="subject" name="subject" placeholder="Type something..." cols="10" rows="10" required></textarea>
           <!-- Do a robot check like 7 + 2 with a little backend -->
           <input type="submit" value="Submit" />
         </form>
       </div>
-    </section>
-    <!-- Footer Notes -->
-    <footer class="container">
-      <div class="bottom-of-page">
-        <p>
-          This is a 100% custom website. Copyright &copy; 2020.
-        </p>
-      </div>
-    </footer>
-  </body>
+  </section>
+  <!-- Footer Notes -->
+  <footer class="container">
+    <div class="bottom-of-page">
+      <p>
+        This is a 100% custom website. Copyright &copy; 2020.
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
