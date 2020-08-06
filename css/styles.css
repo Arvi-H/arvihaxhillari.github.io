@@ -153,13 +153,6 @@ h2 {
   margin-bottom: 50px;
 }
 
-#About {
-  height: 200vh;
-}
-#Contact-Me {
-  height: 200vh;
-}
-
 #abtdiv h1 {
   margin-top: 0;
 }
@@ -168,22 +161,24 @@ h2 {
   background: url(../imgs/background8.png);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  opacity: 0.7;
 }
 
 #myWorkContainer {
   height: 100%;
   width: 70%;
   color: #e9e6e0;
-  position: relative;
-  z-index: 1;
+  position: inherit;
 }
-/* .overlay {
-  width: 100%;
-  height: 119vh;
-  position: absolute;
-  background: rgb(0, 0, 0);
-  opacity: 0.7;
-} */
+
 #Top-Page h1 {
   display: flex;
   align-items: center;
@@ -207,7 +202,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 8%;
+  margin-bottom: 7%;
 }
 
 .margin-right {
@@ -215,9 +210,32 @@ h2 {
 }
 
 .project-item:last-child {
-  margin-bottom: 0%;
+  margin-bottom: 0;
 }
 
 #project-item-1 {
-  margin-top: 8%;
+  margin-top: 5%;
+}
+
+/* End of My Work Page */
+
+/* About Me Page */
+
+#About {
+  background: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#About-Container {
+  color: white;
+  position: relative;
+}
+
+#Contact-Me {
+  height: 200vh;
+}
+
+#About-Container {
 }
