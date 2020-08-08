@@ -162,7 +162,7 @@ h2 {
 }
 
 #My-Work {
-  background: url(../imgs/background8.png);
+  background: url(../imgs/wallpaper00.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -222,10 +222,11 @@ h2 {
 /* About Me Page */
 
 #About {
-  background: black;
+  background: url(../imgs/background0.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  position: relative;
 }
 
 #About-Container {
@@ -260,6 +261,63 @@ h2 {
   padding-bottom: 5%;
 }
 
-#Contact-Me {
-  height: 200vh;
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  opacity: 0.9;
 }
+
+#contact {
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* margin-top: -40px; */
+}
+
+.section-heading h1 {
+  margin: 0;
+  font-size: 70px;
+  font-weight: normal;
+}
+
+/*
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form label {
+  font-size: 1.5rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 5px;
+  border: none;
+  outline-color: pink;
+}
+
+input[type="submit"] {
+  width: initial;
+  background-color: pink;
+  color: gray;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  ;
+}
+input[type="submit"] {
+  color: blue;
+  background-color: yellow;
+} */
