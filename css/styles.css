@@ -34,7 +34,7 @@ header {
   font-size: 1.2em;
 }
 
-#topBar {
+#header__navigation-buttons {
   padding: 10px;
   padding-bottom: 5px;
   position: fixed;
@@ -60,7 +60,7 @@ header nav {
   padding-top: 5px;
 }
 
-.footer {
+#landing-page__footer {
   text-align: center;
   position: absolute;
   bottom: 0;
@@ -70,7 +70,7 @@ header nav {
   min-height: 70px;
 }
 
-#My-Work-Footer {
+#footer-container {
   padding: 10px;
   margin-top: 16px;
 }
@@ -78,7 +78,7 @@ header nav {
 /* End of Nav Bar */
 
 /* Landing Page */
-#Home {
+#landing-page {
   height: 100vh;
   width: 100%;
   background: url(../imgs/background3.png);
@@ -86,7 +86,7 @@ header nav {
   background-size: cover;
 }
 
-#Main-Intro-Box {
+#landing-page__center-info {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -94,13 +94,13 @@ header nav {
   transform: translate(-50%, -50%);
 }
 
-.job-title {
+.center-info__container {
   display: inline-block;
   background-color: rgba(24, 26, 26, 1);
   border: solid 4px #e9e6e0;
 }
 
-.job-title h1,
+.center-info__container h1,
 h2 {
   color: #e9e6e0;
   font-size: 2em;
@@ -109,17 +109,17 @@ h2 {
   padding: 0em 0.8em;
 }
 
-.job-title h1 {
+.center-info__container h1 {
   margin: 20px 0px 0.1px 0px;
   font-size: 250%;
 }
 
-.job-title h2 {
+.center-info__container h2 {
   margin: 0.1px 0px 30px 0px;
   font-size: 150%;
 }
 
-#Intro-Box-Buttons a {
+#center-info__navigation a {
   text-decoration: none;
   color: #e9e6e0;
   border: solid 0.5px #e9e6e0;
@@ -131,7 +131,7 @@ h2 {
   margin-right: 5%;
 }
 
-#Intro-Box-Buttons {
+#center-info__navigation {
   margin-bottom: 7%;
 }
 
