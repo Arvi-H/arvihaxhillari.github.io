@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <title>Arvi Haxhillari</title>
   </head>
 
   <body>
@@ -166,47 +166,41 @@
     </section>
 
     <section id="contact">
+      <div id="overlay2"></div>
+
       <div class="container" id="Contact-Container">
         <div class="section-heading">
           <h1 class="title">Contact Me</h1>
         </div>
-        <form action="">
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name..."
-            required
-          />
-          <!-- <label for="flastname"></label>
-          <input
-            type="text"
-            id="lastname"
-            name="lastname"
-            placeholder="Last Name"
-            required
-          /> -->
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email..."
-            required
-          />
-          <label for="subject">Message:</label>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Type something..."
-            cols="10"
-            rows="10"
-            required
-          ></textarea>
-          <!-- Do a robot check like 7 + 2 with a little backend -->
-          <input type="submit" value="Submit" />
-        </form>
+        <div id="formPosition">
+          <form action="contact-form" action="index.html" method="post">
+            <input
+              type="text"
+              class="contact-form-text"
+              placeholder="Enter your name"
+            />
+
+            <input
+              type="email"
+              name="email"
+              class="contact-form-text"
+              placeholder="Enter your email"
+            />
+
+            <input
+              type="text"
+              class="contact-form-text"
+              placeholder="Enter your phone number"
+            />
+
+            <textarea
+              class="contact-form-text"
+              placeholder="Your message"
+            ></textarea>
+
+            <input type="submit" class="contact-form-btn" value="Send" />
+          </form>
+        </div>
       </div>
     </section>
     <!-- Footer Notes -->
