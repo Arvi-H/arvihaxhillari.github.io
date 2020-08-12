@@ -1,224 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Arvi Haxhillari</title>
-    <meta
-      name="description"
-      content="Arvi Haxhillari is a Software Engineer, Web Developer, and Lead Programmer of FRC team #6844. View some of my work here."
-    />
-    <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Arvi Haxhillari" />
-    <meta property="og:url" content="http://arvihaxhillari.com/" />
-    <meta property="profile:first_name" content="Arvi" />
-    <meta property="profile:last_name" content="Haxhillari" />
-  </head>
 
-  <body>
-    <!-- Landing Page -->
-    <section id="landing-page">
-      <header>
-        <div id="header__navigation-buttons">
-          <div id="signature">
-            <!-- Put signature/logo here; For now, an h1 will do -->
-            <a href="#">
-              <h1>ARVI HAXHILLARI</h1>
-            </a>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#footer-container">My Work</a></li>
-              <li><a href="./imgs/Resume.pdf" target="_blank">Resume</a></li>
-              <li><a href="#About-Link">About</a></li>
-              <li><a href="#Contact-Link">Contact Me</a></li>
-            </ul>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Arvi Haxhillari</title>
+  <meta name="description"
+    content="Arvi Haxhillari is a Software Engineer, Web Developer, and Lead Programmer of FRC team #6844. View some of my work here." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Arvi Haxhillari" />
+  <meta property="og:url" content="http://arvihaxhillari.com/" />
+  <meta property="profile:first_name" content="Arvi" />
+  <meta property="profile:last_name" content="Haxhillari" />
+</head>
+
+<body>
+  <!-- Landing Page -->
+  <section id="landing-page">
+    <header>
+      <div id="header__navigation-buttons">
+        <div id="signature">
+          <!-- Put signature/logo here; For now, an h1 will do -->
+          <a href="#">
+            <h1>ARVI HAXHILLARI</h1>
+          </a>
         </div>
-      </header>
-      <div id="landing-page__center-info">
-        <div class="center-info__container">
-          <h1>Arvi Haxhillari</h1>
-          <h2>Software Engineer/Web Developer</h2>
-          <div id="center-info__navigation">
-            <a href="https://github.com/Arvi-H" target="_blank" id="gitBtn"
-              >GitHub</a
-            >
-            <a href="./imgs/Resume.pdf" target="_blank" id="resumeBtn"
-              >Resume</a
-            >
-          </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#footer-container">My Work</a></li>
+            <li><a href="./imgs/Resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="#about-goto__container">About</a></li>
+            <li><a href="#contact-goto__container">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="landing-page__center-info">
+      <div class="center-info__container">
+        <h1>Arvi Haxhillari</h1>
+        <h2>Software Engineer/Web Developer</h2>
+        <div id="center-info__navigation">
+          <a href="https://github.com/Arvi-H" target="_blank" id="gitBtn">GitHub</a>
+          <a href="./imgs/Resume.pdf" target="_blank" id="resumeBtn">Resume</a>
         </div>
       </div>
-      <footer id="landing-page__footer">
-        <div id="footer-container"></div>
-      </footer>
-    </section>
-    <!-- My Work -->
-    <section id="My-Work">
-      <div class="overlay"></div>
-      <div class="container" id="myWorkContainer">
-        <div id="Top-Page">
-          <h1 class="title">Portfolio</h1>
-          <h5>View some of my recent projects.</h5>
+    </div>
+    <footer id="landing-page__footer">
+      <div id="footer-container"></div>
+    </footer>
+  </section>
+  <!-- My Work -->
+  <section id="portfolio-page">
+    <div id="portfolio-page__overlay"></div>
+    <div class="container" id="portfolio-page__container">
+      <div id="portfolio-page__top-info">
+        <h1 class="title">Portfolio</h1>
+        <h5>View some of my recent projects.</h5>
+      </div>
+      <div class="project-item" id="project-item-1">
+        <div class="project-image margin-right">
+          <img src="./imgs/TicTacToe.jpg" alt="TicTacToe" class="myWorkImgs" />
         </div>
-
-        <div class="project-item" id="project-item-1">
-          <div class="project-image margin-right">
-            <img
-              src="./imgs/TicTacToe.jpg"
-              alt="TicTacToe"
-              class="myWorkImgs"
-            />
-          </div>
-
-          <div class="project-description">
-            <h2>Tic Tac Toe Game</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur amet non dolorum, iste vel possimus. Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Dolor
-              perferendis?Lorem ipsum dolor, sit amet consectetur adipisicing
-              elit. Accusamus aliquam doloremque praesentium expedita amet hic
-              laborum iure porro maiores dolorum provident consequuntur ullam
-              illum perspiciatis, est ipsum atque laudantium consequatur!
-            </p>
-            <!-- TODO - Button for View Code -->
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-description margin-right">
-            <h2>FIRST - 2020 | Infinite Recharge</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur amet non dolorum, iste vel possimus. Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Dolor
-              perferendis?Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Explicabo commodi neque nulla consequuntur dicta nisi! Quis
-              neque voluptas quam. Ducimus modi asperiores ex deleniti provident
-              dignissimos id placeat veritatis cupiditate.
-            </p>
-            <!-- TODO - Button for View Code -->
-          </div>
-
-          <div class="project-image">
-            <img
-              src="./imgs/2019-Robot.png"
-              alt="2019-Robot"
-              class="myWorkImgs"
-            />
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-image margin-right">
-            <img
-              src="./imgs/2019-Robot.png"
-              alt="2020-Robot"
-              class="myWorkImgs"
-            />
-          </div>
-
-          <div class="project-description">
-            <h2>FIRST - 2019 | Destination: Deep Space</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur amet non dolorum, iste vel possimus. Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Dolor
-              perferendis?Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Consequuntur, eveniet, adipisci ipsam vel distinctio
-              quibusdam reiciendis sunt quae, earum nam omnis labore. Sit
-              possimus est itaque, at quos nobis id.
-            </p>
-            <!-- TODO - Button for View Code -->
-          </div>
-        </div>
-        <div id="About-Link1">
-          <div id="About-Link"></div>
+        <div class="project-description">
+          <h2>Tic Tac Toe Game</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur amet non dolorum, iste vel possimus. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Dolor
+            perferendis?Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Accusamus aliquam doloremque praesentium expedita amet hic
+            laborum iure porro maiores dolorum provident consequuntur ullam
+            illum perspiciatis, est ipsum atque laudantium consequatur!
+          </p>
+          <!-- TODO - Button for View Code -->
         </div>
       </div>
-    </section>
-
-    <!-- About Page -->
-    <section id="About">
-      <div id="overlay"></div>
-      <div class="container" id="About-Container">
-        <div id="About-title">
-          <h1 class="title">About Me</h1>
+      <div class="project-item">
+        <div class="project-description margin-right">
+          <h2>FIRST - 2020 | Infinite Recharge</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur amet non dolorum, iste vel possimus. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Dolor
+            perferendis?Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Explicabo commodi neque nulla consequuntur dicta nisi! Quis
+            neque voluptas quam. Ducimus modi asperiores ex deleniti provident
+            dignissimos id placeat veritatis cupiditate.
+          </p>
+          <!-- TODO - Button for View Code -->
         </div>
-        <!-- Do the same animation as the projects part -->
-        <div class="project-item">
-          <div class="project-image" id="abtPic">
-            <img src="./imgs/MyPicture1.jpg" alt="My Picture" width="300px" />
-          </div>
-          <div class="project-description">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              aperiam autem sint totam, perspiciatis perferendis ut amet
-              temporibus commodi voluptatibus? Lorem ipsum dolor sit amet
-              consectetur adipisicing elit.
-            </p>
-          </div>
+        <div class="project-image">
+          <img src="./imgs/2019-Robot.png" alt="2019-Robot" class="myWorkImgs" />
         </div>
-        <!-- Maybe Remove this?
+      </div>
+      <div class="project-item">
+        <div class="project-image margin-right">
+          <img src="./imgs/2019-Robot.png" alt="2020-Robot" class="myWorkImgs" />
+        </div>
+        <div class="project-description">
+          <h2>FIRST - 2019 | Destination: Deep Space</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur amet non dolorum, iste vel possimus. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Dolor
+            perferendis?Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consequuntur, eveniet, adipisci ipsam vel distinctio
+            quibusdam reiciendis sunt quae, earum nam omnis labore. Sit
+            possimus est itaque, at quos nobis id.
+          </p>
+          <!-- TODO - Button for View Code -->
+        </div>
+      </div>
+      <div id="nav-link-about-goto">
+        <div id="about-goto__container"></div>
+      </div>
+    </div>
+  </section>
+  <!-- About Page -->
+  <section id="about">
+    <div id="about-page__overlay"></div>
+    <div class="container" id="about-page__container">
+      <div id="about-page__top-info">
+        <h1 class="title">About Me</h1>
+      </div>
+      <!-- Do the same animation as the projects part -->
+      <div class="project-item">
+        <div class="project-image margin-right">
+          <img src="./imgs/MyPicture1.jpg" alt="My Picture" width="300px" />
+        </div>
+        <div class="project-description">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            aperiam autem sint totam, perspiciatis perferendis ut amet
+            temporibus commodi voluptatibus? Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+      <!-- Maybe Remove this?
         <div class="social-media">
           <h2>Social Media</h2>
           Learn how to create icon buttons then do github, linked in below.
         </div> -->
+    </div>
+    <div id="nav-link-contact-goto">
+      <div id="contact-goto__container"></div>
+    </div>
+  </section>
+  <section id="contact-page">
+    <div id="contact-page__overlay"></div>
+    <div class="container" id="contact-page__container">
+      <div class="contact-page__top-info">
+        <h1 class="title">Contact Me</h1>
       </div>
-      <div id="Contact-Link1">
-        <div id="Contact-Link"></div>
+      <div id="contact-form-container">
+        <form action="contact-form" action="index.html" method="post">
+          <input type="text" class="contact-form-text" placeholder="Enter your name" required />
+          <input type="email" name="email" class="contact-form-text" placeholder="Enter your email" required />
+          <input type="text" class="contact-form-text" placeholder="Enter your phone number" />
+          <textarea class="contact-form-text" placeholder="Your message" required></textarea>
+          <input type="submit" id="contact-form__submit-btn" value="Submit" />
+        </form>
       </div>
-    </section>
+    </div>
+  </section>
+  <!-- Footer Notes -->
+  <footer class="container">
+    <div id="main-footer__container">
+      <p>
+        This is a 100% custom website. Copyright &copy;2020.
+      </p>
+    </div>
+  </footer>
+</body>
 
-    <section id="contact">
-      <div id="overlay2"></div>
-
-      <div class="container" id="Contact-Container">
-        <div class="section-heading">
-          <h1 class="title">Contact Me</h1>
-        </div>
-        <div id="formPosition">
-          <form action="contact-form" action="index.html" method="post">
-            <input
-              type="text"
-              class="contact-form-text"
-              placeholder="Enter your name"
-            />
-
-            <input
-              type="email"
-              name="email"
-              class="contact-form-text"
-              placeholder="Enter your email"
-            />
-
-            <input
-              type="text"
-              class="contact-form-text"
-              placeholder="Enter your phone number"
-            />
-
-            <textarea
-              class="contact-form-text"
-              placeholder="Your message"
-            ></textarea>
-
-            <input type="submit" class="contact-form-btn" value="Submit" />
-          </form>
-        </div>
-      </div>
-    </section>
-    <!-- Footer Notes -->
-    <footer class="container">
-      <div class="bottom-of-page">
-        <p>
-          This is a 100% custom website. Copyright &copy;2020.
-        </p>
-      </div>
-    </footer>
-  </body>
 </html>
