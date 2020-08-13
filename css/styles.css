@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 70%;
   margin: auto;
 }
 /* End of General */
@@ -127,7 +127,7 @@ h2 {
   padding: 8px;
 }
 
-#gitBtn {
+#git-btn {
   margin-right: 5%;
 }
 
@@ -178,7 +178,6 @@ h2 {
 
 #portfolio-page__container {
   height: 100%;
-  width: 70%;
   color: #e9e6e0;
   position: inherit;
 }
@@ -248,7 +247,7 @@ h2 {
 }
 
 #about-page__container {
-  width: 55%;
+  width: 60%;
 }
 
 .project-item:last-child {
@@ -299,12 +298,6 @@ h2 {
   position: relative;
 }
 
-.contact-form {
-  max-width: 600px;
-  padding: 0 10px;
-  overflow: hidden;
-}
-
 .contact-form-text {
   display: block;
   width: 100%;
@@ -316,9 +309,8 @@ h2 {
   outline: none;
 }
 
-.contact-form-text:hover:focus {
-  /* box-shadow: 0 0 10px 4px #34495e; */
-  box-shadow: 0 0 8px 8px #111f2e;
+.contact-form-text:focus {
+  box-shadow: 0 0 8px 10px #111f2e;
 }
 
 textarea.contact-form-text {
@@ -328,17 +320,40 @@ textarea.contact-form-text {
 
 #contact-form__submit-btn {
   float: right;
-  border: 0px;
-  border-color: white;
-  background-color: rgb(0, 0, 0);
-  color: #fff;
-  padding: 12px 50px;
-  border-radius: 20px;
-  cursor: pointer;
+  text-decoration: none;
+  color: #e9e6e0;
+  border: solid 0.5px #e9e6e0;
+  font-size: 1.15em;
+  padding: 8px;
+  background-color: black;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 #contact-form__submit-btn:hover {
   background: rgb(255, 255, 255);
   color: black;
+  font: bold;
+}
+
+#main-footer {
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+#main-footer p{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+::placeholder {
+    font: 14px/1.5 "Oxygen Mono", monospace, Arial, Helvetica, sans-serif;
+    font-weight: normal;
 }

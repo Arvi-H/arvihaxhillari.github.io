@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <title>Arvi Haxhillari</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta author="Arvi Haxhillari">
   <meta name="description"
     content="Arvi Haxhillari is a Software Engineer, Web Developer, and Lead Programmer of FRC team #6844. View some of my work here." />
+  <title>Arvi Haxhillari</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+
   <meta property="og:type" content="profile" />
   <meta property="og:title" content="Arvi Haxhillari" />
   <meta property="og:url" content="http://arvihaxhillari.com/" />
@@ -42,8 +45,8 @@
         <h1>Arvi Haxhillari</h1>
         <h2>Software Engineer/Web Developer</h2>
         <div id="center-info__navigation">
-          <a href="https://github.com/Arvi-H" target="_blank" id="gitBtn">GitHub</a>
-          <a href="./imgs/Resume.pdf" target="_blank" id="resumeBtn">Resume</a>
+          <a href="https://github.com/Arvi-H" target="_blank" id="git-btn">GitHub</a>
+          <a href="./imgs/Resume.pdf" target="_blank" id="resume-btn">Resume</a>
         </div>
       </div>
     </div>
@@ -95,11 +98,26 @@
           <img src="./imgs/2019-Robot.png" alt="2019-Robot" class="myWorkImgs" />
         </div>
       </div>
-      <div class="project-item">
+      <div class="project-item" id="project-item-1">
         <div class="project-image margin-right">
-          <img src="./imgs/2019-Robot.png" alt="2020-Robot" class="myWorkImgs" />
+          <img src="./imgs/TicTacToe.jpg" alt="TicTacToe" class="myWorkImgs" />
         </div>
         <div class="project-description">
+          <h2>Tic Tac Toe Game</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur amet non dolorum, iste vel possimus. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Dolor
+            perferendis?Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Accusamus aliquam doloremque praesentium expedita amet hic
+            laborum iure porro maiores dolorum provident consequuntur ullam
+            illum perspiciatis, est ipsum atque laudantium consequatur!
+          </p>
+          <!-- TODO - Button for View Code -->
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-description margin-right">
           <h2>FIRST - 2019 | Destination: Deep Space</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -112,7 +130,12 @@
           </p>
           <!-- TODO - Button for View Code -->
         </div>
+        <div class="project-image">
+          <img src="./imgs/2019-Robot.png" alt="2020-Robot" class="myWorkImgs" />
+        </div>
       </div>
+
+
       <div id="nav-link-about-goto">
         <div id="about-goto__container"></div>
       </div>
@@ -161,13 +184,13 @@
           <input type="email" name="email" class="contact-form-text" placeholder="Enter your email" required />
           <input type="text" class="contact-form-text" placeholder="Enter your phone number" />
           <textarea class="contact-form-text" placeholder="Your message" required></textarea>
-          <input type="submit" id="contact-form__submit-btn" value="Submit" />
+          <input type="submit" id="contact-form__submit-btn" value=" Submit " />
         </form>
       </div>
     </div>
   </section>
   <!-- Footer Notes -->
-  <footer class="container">
+  <footer class="container" id="main-footer">
     <div id="main-footer__container">
       <p>
         This is a 100% custom website. Copyright &copy;2020.
