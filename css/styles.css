@@ -20,6 +20,19 @@ html,body
 /* End of General */
 
 /* Nav Bar */
+
+nav {
+  
+  padding: 10px;
+  padding-bottom: 5px;
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  background-color: rgba(2, 2, 2, 0.8);
+  z-index: 1;
+}
+
+
 header a {
   color: white;
   text-decoration: none;
@@ -41,32 +54,78 @@ header {
   font-size: 1.2em;
 }
 
-#header__navigation-buttons {
-  padding: 10px;
-  padding-bottom: 5px;
-  position: fixed;
-  width: 100%;
-  margin: auto;
-  background-color: rgba(2, 2, 2, 0.8);
-  z-index: 1;
-}
-
-#signature {
+.logo {
+  text-transform: uppercase;
+  transition: all 0.4s ease;
   float: left;
   padding-left: 20px;
+  cursor: pointer;
 }
 
-#signature h1 {
+
+.logo h1 {
   margin: 0;
   font-weight: normal;
 }
 
-header nav {
+
+.logo:hover {
+  transform: scale(.97);
+  color: gray;
+}
+
+
+.navLinks {
   float: right;
-  padding-right: 30px;
   padding-top: 5px;
 }
 
+.navLinks li {
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+.navLinks li:hover {
+  transform: scale(.97);
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.navLinks li a:hover {
+  color: gray;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.4s ease;
+}
+
+.navActive {
+  transform: translateX(0%) !important;
+}
+
+.toggleOpenClose .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggleOpenClose .line2 {
+  opacity: 0;
+}
+
+.toggleOpenClose .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
 /* End of Nav Bar */
 
 /* Landing Page */
@@ -508,6 +567,9 @@ textarea.contact-form-text {
   }
 
   @media (max-width: 750px) {
+    
+
+
     .project-item {
       flex-direction: column;
       margin-top: 15%;
@@ -540,6 +602,57 @@ textarea.contact-form-text {
     .margin-right {
       margin: 0;
     }
+
+    .navLinks {
+      position: absolute;
+      right: 0px;
+      height: 300px;
+      top: 55px;
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+      opacity: 0.8;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+      padding-top: 0;
+    }
+
+    .navLinks li:first-child {
+      border-top: 3px solid white;
+    }
+
+    .navLinks li {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: normal;
+      letter-spacing: 2px;
+      font-size: 15px;
+      height: 60px;
+      padding: 0;
+    }
+
+    .navLinks li a {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+    }
+
+    .burger {
+      display: block;
+      float: right;
+      margin-right: 20px;
+      margin-top: 6.5px;
+      cursor: pointer;
+    }
+
   }
 
   @media (max-width: 500px) { 
@@ -598,16 +711,16 @@ textarea.contact-form-text {
     }
 
     #main-footer p {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding: 10px;
-    font-size: 0.8em;
-    font-weight: normal;
-  }
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding: 10px;
+      font-size: 0.8em;
+      font-weight: normal;
+    }
 
   }
 
@@ -664,10 +777,17 @@ textarea.contact-form-text {
       padding: 8px;
     }
 
-
-
-
-
-
-
   }
+
+
+/***** KEYFRAMES / ANIMATIONS *****/
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
