@@ -7,13 +7,13 @@ body {
   font-weight: normal;
 }
 
-html,body
-{
+html, body {
     width: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
 }
+
 .container {
   width: 70%;
   margin: auto;
@@ -21,9 +21,7 @@ html,body
 /* End of General */
 
 /* Nav Bar */
-
 header a {
-  color: white;
   text-decoration: none;
 }
 
@@ -48,9 +46,7 @@ nav {
   font-size: 1.2em;
 }
 
-
-
-.logo {
+.nav__logo {
   text-transform: uppercase;
   transition: all 0.4s ease;
   float: left;
@@ -59,21 +55,19 @@ nav {
   padding-top: 13px;
 }
 
-
-.logo h1 {
+.nav__logo h1 {
   margin: 0;
-  font-weight: normal;
   letter-spacing: 5px;
 }
 
 
-.logo:hover {
+.nav__logo:hover {
   transform: scale(.97);
-  color: gray;
+  color: rgb(100, 71, 9);
 }
 
 
-.navLinks {
+.nav__links {
   float: right;
   padding-top: 14px;
   padding-right: 20px;
@@ -81,22 +75,22 @@ nav {
 
 }
 
-.navLinks li {
+.nav__links li {
   list-style: none;
   transition: all 0.4s ease;
 }
 
-.navLinks li:hover {
+.nav__links li:hover {
   transform: scale(.97);
 }
 
-.navLinks li a {
+.nav__links li a {
   color: white;
   text-decoration: none;
   transition: all 0.4s ease;
 }
 
-.navLinks li a:hover {
+.nav__links li a:hover {
   color: gray;
 }
 
@@ -211,8 +205,7 @@ nav {
     border-color: white;
 }
 
-.center-info__container h1,
-h2 {
+.center-info__container h1, h2 {
   color: #e9e6e0;
   font-weight: normal;
   display: block;
@@ -403,7 +396,9 @@ h2 {
   background: rgb(0, 0, 0);
   opacity: 0.9;
 }
+/* End of About Me Page */
 
+/* Contact Me Page */
 #contact-page {
   background: url(../imgs/contact-me-wallpaper.jpeg);
   background-repeat: no-repeat;
@@ -488,8 +483,9 @@ textarea.contact-form-text {
   display: block;
 }
 
+/* End of Contact Me Page */
 
-
+/* Main Footer */
 #main-footer {
   height: 100%;
   width: 100%;
@@ -508,8 +504,8 @@ textarea.contact-form-text {
   padding: 10px;
   font-size: 1.1em;
   font-weight: normal;
-  
 }
+/* End of Main Footer */
 
 ::placeholder {
     font: 14px/1.5 "Oxygen Mono", monospace, Arial, Helvetica, sans-serif;
@@ -518,18 +514,20 @@ textarea.contact-form-text {
 
   @media (max-width: 1050px) {
         
+    /* Nav Bar */
     header li {
       display: inline;
-      padding: 0 0.25em 0 0.25em;
+      padding: 0 0px 0 10px;
     }
 
-    .logo h1 {
+    .nav__logo h1 {
       margin: 0;
       font-weight: normal;
       letter-spacing: 3px;
     }
+    /* End of Nav Bar */
 
-
+    /* Landing Page */
     #landing-page {
       height: 100vh;
       width: 100%;
@@ -551,7 +549,9 @@ textarea.contact-form-text {
       font-size: 1.5em;
       margin-top: 10px;
     }
+    /* End of Landing Page */
 
+    /* My Work Page */
     #portfolio-page__container {
       height: 100%;
       color: #e9e6e0;
@@ -566,20 +566,80 @@ textarea.contact-form-text {
     .margin-right {
       margin-right: 7%;
     }
+    /* End of My Work Page */
 
+    /* About Me Page */
     #about-page__container {
         width: 90%;
     }
+    /* End of About Me Page */
 
+    /* Contact Me Page */
     #contact-page__container {
       width: 85%;
       position: relative;
       padding-bottom: 100px;
     }
-  }
+    /* End of Contact Me Page */
 
+  }
+   
   @media (max-width: 750px) {
     
+    /* Nav Bar */
+    .nav__links {
+      position: absolute;
+      right: 0px;
+      height: 300px;
+      top: 54px;
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+      opacity: 0.8;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+      padding-top: 0;
+      padding-right: 0;
+    }
+
+    .nav__links li:first-child {
+      border-top: 3px solid white;
+    }
+
+    .nav__links li {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: normal;
+      letter-spacing: 2px;
+      font-size: 15px;
+      height: 60px;
+      padding: 0;
+    }
+
+    .nav__links li a {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+    }
+
+    .burger {
+      display: block;
+      float: right;
+      padding-right: 20px;
+      padding-top: 14.5px;
+      cursor: pointer; 
+    }
+    /* End of Nav Bar */
+   
+    /* My Work Page */
     .project-item {
       flex-direction: column;
       margin-top: 15%;
@@ -600,79 +660,24 @@ textarea.contact-form-text {
       order: 1;
     }
 
-        
-    #project-item-1 {
+     #project-item-1 {
       margin-top: 70px;
     }
 
     #last-portfolio-item {
       margin-top:  15%;
     }
-
+    
     .margin-right {
       margin: 0;
-    }
+    } 
+    /* End of My Work Page */
 
-    .navLinks {
-      position: absolute;
-      right: 0px;
-      height: 300px;
-      top: 54px;
-      background-color: rgb(0, 0, 0);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 200px;
-      opacity: 0.8;
-      transform: translateX(100%);
-      transition: transform 0.5s ease-in;
-      padding-top: 0;
-      padding-right: 0;
-    }
-
-    .navLinks li:first-child {
-      border-top: 3px solid white;
-    }
-
-    .navLinks li {
-      opacity: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: normal;
-      letter-spacing: 2px;
-      font-size: 15px;
-      height: 60px;
-      padding: 0;
-    }
-
-    .navLinks li a {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      padding-left: 10px;
-    }
-
-    .burger {
-      display: block;
-      float: right;
-      padding-right: 20px;
-      padding-top: 14.5px;
-      cursor: pointer;
-  }
-    /* #portfolio-page__container {
-      height: 100%;
-      color: #e9e6e0;
-      position: inherit;
-      width: 70%;
-    } */
   }
 
   @media (max-width: 500px) { 
     
+    /* Landing Page */
     #landing-page {
       height: 100vh;
       width: 100%;
@@ -682,7 +687,7 @@ textarea.contact-form-text {
       background-position: left;
       position: relative;
     }
-        
+
     .landing-page__center-info {
       text-align: center;
       position: absolute;
@@ -713,19 +718,34 @@ textarea.contact-form-text {
       font-size: 0.9em;
       padding: 8px;
     }
+    /* End of Landing Page */
 
-    #portfolio-page__top-info h1 {
-      font-size: 50px;
+    /* My Work Page */
+    #portfolio-page {
+      background: url(../imgs/wallpaper01.png);
+      background-repeat: repeat-y;
+      background-size: contain;
+      position: relative;
     }
 
+    #portfolio-page__top-info h1 {
+      font-size: 50px;    
+    }
+    /* End of My Work Page */
+   
+    /* About Me Page */
     #about-page__top-info h1 {
       font-size: 50px;
     }
+    /* End of About Me Page */
+        
+    /* Contact Me Page */
+      #contact-page__top-info h1 {
+        font-size: 50px;
+      }
+    /* End of Contact Me Page */
 
-    #contact-page__top-info h1 {
-      font-size: 50px;
-    }
-
+    /* Main Footer */
     #main-footer p {
       margin: 0;
       width: 100%;
@@ -737,31 +757,20 @@ textarea.contact-form-text {
       font-size: 0.8em;
       font-weight: normal;
     }
+    /* End of Main Footer */ 
 
   }
 
-  
-
   @media (min-width: 1400px) { 
           
+    /* General */
     .container {
       width: 55%;
       margin: auto;
     }
-
-    #about-page__container {
-      color: white;
-      position: relative;
-      width: 40%;
-    }
-
-    #contact-page__container {
-      width: 40%;
-      position: relative;
-      padding-bottom: 100px;
-      color: white;
-    }
-
+    /* End of General */
+    
+    /* Landing Page */
     .landing-page__center-info {
       text-align: center;
       position: absolute;
@@ -792,6 +801,24 @@ textarea.contact-form-text {
       font-size: 1.4em;
       padding: 8px;
     }
+    /* End of Landing Page */
+
+    /* About Me Page */
+    #about-page__container {
+      color: white;
+      position: relative;
+      width: 40%;
+    }
+    /* End of About Me Page */
+    
+    /* Contact Me Page */
+    #contact-page__container {
+      width: 40%;
+      position: relative;
+      padding-bottom: 100px;
+      color: white;
+    }
+    /* End of Contact Me Page */
 
   }
 
