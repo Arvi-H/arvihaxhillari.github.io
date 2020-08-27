@@ -460,7 +460,6 @@ textarea.contact-form-text {
   resize: none;
   height: 120px;
 }
-
 #contact-form__submit-btn {
   float: right;
   text-decoration: none;
@@ -472,12 +471,13 @@ textarea.contact-form-text {
   transition: 0.5s;
   cursor: pointer;
 }
+/* 
 
 #contact-form__submit-btn:hover {
   background: rgb(255, 255, 255);
   color: black;
   font: bold;
-}
+} */
 
 #contact-form-container {
   display: block;
@@ -511,6 +511,29 @@ textarea.contact-form-text {
     font: 14px/1.5 "Oxygen Mono", monospace, Arial, Helvetica, sans-serif;
     font-weight: normal;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   @media (max-width: 1050px) {
         
