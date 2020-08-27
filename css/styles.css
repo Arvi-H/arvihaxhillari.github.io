@@ -739,19 +739,26 @@ textarea.contact-form-text {
       font-size: 50px;    
     }
 
+
     .project-item{
-      border-top: solid 1.5px #ffffff;
-      border-bottom: solid 1.5px #ffffff;
-      padding: 20px 30px;
+      border: solid 1.5px white;
+      /* border-top: solid 1.5px #ffffff;
+      border-bottom: solid 1.5px #ffffff; */
+      padding: 15px 35px;
+      padding-top: 25px;
     }
 
     .project-description h2 {
-      text-align: start;
-      font-size: 20px;
+      text-align: center;
+      font-size: 23px;
+    }
+
+    .project-description p {
+      font-size: 15px;
     }
 
     .myWorkImgs {
-      width: 310px;
+      width: 300px;
     }
     /* End of My Work Page */
    
