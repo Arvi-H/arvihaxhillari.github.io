@@ -148,7 +148,7 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  width: 470px;
   height: 300px;
   display: block;
 }
@@ -344,6 +344,22 @@ nav {
   text-align: start;
 }
 
+
+.project-item__btn a{
+  text-decoration: none;
+  color: #e9e6e0;
+  border: solid 0.5px #e9e6e0;
+  font-size: 1.3em;
+  padding: 8px;
+}
+
+.project-item__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .margin-right {
   margin-right: 10%;
 }
@@ -352,9 +368,9 @@ nav {
   margin-top: 5%;
 }
 
-  .myWorkImgs {
-      width: 350px;
-  } 
+.myWorkImgs {
+    width: 350px;
+} 
 
 /* End of My Work Page */
 
@@ -460,6 +476,7 @@ textarea.contact-form-text {
   resize: none;
   height: 120px;
 }
+
 #contact-form__submit-btn {
   float: right;
   text-decoration: none;
@@ -471,13 +488,12 @@ textarea.contact-form-text {
   transition: 0.5s;
   cursor: pointer;
 }
-/* 
 
 #contact-form__submit-btn:hover {
   background: rgb(255, 255, 255);
   color: black;
   font: bold;
-} */
+}
 
 #contact-form-container {
   display: block;
@@ -511,29 +527,6 @@ textarea.contact-form-text {
     font: 14px/1.5 "Oxygen Mono", monospace, Arial, Helvetica, sans-serif;
     font-weight: normal;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   @media (max-width: 1050px) {
         
@@ -579,7 +572,7 @@ textarea.contact-form-text {
       height: 100%;
       color: #e9e6e0;
       position: inherit;
-      width: 85%;
+      width: 90%;
     }
       
     #last-portfolio-item {
@@ -724,8 +717,8 @@ textarea.contact-form-text {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 320px;
-      height: 230px;
+      width: 340px;
+      height: 220px;
       display: block;
     }
 
@@ -748,6 +741,22 @@ textarea.contact-form-text {
       font-size: 0.9em;
       padding: 8px;
     }
+
+    .c-frame-tl {
+      border-width: 7px;
+    }
+
+    .c-frame-tr {
+      border-width: 7px;
+    }
+
+    .c-frame-br {
+      border-width: 7px;
+    }
+
+    .c-frame-bl {
+      border-width: 7px;
+    }
     /* End of Landing Page */
 
     /* My Work Page */
@@ -767,7 +776,7 @@ textarea.contact-form-text {
       border: solid 1.5px white;
       /* border-top: solid 1.5px #ffffff;
       border-bottom: solid 1.5px #ffffff; */
-      padding: 15px 35px;
+      padding: 45px 35px;
       padding-top: 25px;
     }
 
