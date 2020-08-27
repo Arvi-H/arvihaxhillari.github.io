@@ -640,9 +640,16 @@ textarea.contact-form-text {
     /* End of Nav Bar */
    
     /* My Work Page */
+    #portfolio-page {
+      background: url(../imgs/wallpaper01.png);
+      background-repeat: repeat-y;
+      background-size: contain;
+      position: relative;
+    }
+
     .project-item {
       flex-direction: column;
-      margin-top: 15%;
+      margin-top: 100px;
       text-align: center;
       justify-content: center;
     }
@@ -665,7 +672,7 @@ textarea.contact-form-text {
     }
 
     #last-portfolio-item {
-      margin-top:  15%;
+      margin-top:  100px;
     }
     
     .margin-right {
@@ -721,21 +728,40 @@ textarea.contact-form-text {
     /* End of Landing Page */
 
     /* My Work Page */
-    #portfolio-page {
-      background: url(../imgs/wallpaper01.png);
-      background-repeat: repeat-y;
-      background-size: contain;
-      position: relative;
+    #portfolio-page__container {
+      height: 100%;
+      color: #e9e6e0;
+      position: inherit;
+      width: 100%;
     }
 
     #portfolio-page__top-info h1 {
       font-size: 50px;    
+    }
+
+    .project-item{
+      border-top: solid 1.5px #ffffff;
+      border-bottom: solid 1.5px #ffffff;
+      padding: 20px 30px;
+    }
+
+    .project-description h2 {
+      text-align: start;
+      font-size: 20px;
+    }
+
+    .myWorkImgs {
+      width: 310px;
     }
     /* End of My Work Page */
    
     /* About Me Page */
     #about-page__top-info h1 {
       font-size: 50px;
+    }
+
+    #about__project-item {
+      border: none;
     }
     /* End of About Me Page */
         
