@@ -232,8 +232,15 @@ nav {
   margin-top: 10px;
  }
 
+#center-info__navigation {
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 25px;
+}
 
 #center-info__navigation a {
+  text-align: center;
   text-decoration: none;
   color: #e9e6e0;
   border: solid 0.5px #e9e6e0;
@@ -241,21 +248,17 @@ nav {
   padding: 8px;
 }
 
-#center-info__navigation a:hover {
-  transform: scale(.95);
-  color: rgb(0, 0, 0);
-  border: solid 1.5px #000000;
-  font-weight: bold;
+#resume-btn {
+  margin-left: 20px;
 }
 
-#git-btn {
-  margin-right: 5%;
+#git-btn:hover {
+  font-size: 17.1px;
 }
 
-#center-info__navigation {
-  margin-bottom: 7%;
-} 
-
+#resume-btn:hover {
+  font-size: 17.1px;
+}
 #landing-page__footer {
   text-align: center;
   position: absolute;
@@ -371,7 +374,6 @@ nav {
 
 .project-item__btn a:hover {
   transform: scale(.95);
-  color: gray;
 }
 
 .margin-right {
@@ -383,7 +385,7 @@ nav {
 }
 
 .myWorkImgs {
-    width: 350px;
+  width: 350px;
 } 
 
 #portfolio__view-more-work {
@@ -782,13 +784,21 @@ textarea.contact-form-text {
       font-size: 1.1em;
       margin-top: 10px;
     }
-
+ 
     #center-info__navigation a {
       text-decoration: none;
       color: #e9e6e0;
       border: solid 0.5px #e9e6e0;
       font-size: 0.9em;
       padding: 8px;
+    }
+
+    #git-btn:hover {
+      font-size: 12.82px;
+    }
+
+    #resume-btn:hover {
+      font-size: 12.82px;
     }
 
     .c-frame-tl {
@@ -914,13 +924,21 @@ textarea.contact-form-text {
       font-size: 2.1em;
       margin-top: 10px;
     }
-
+ 
     #center-info__navigation a {
       text-decoration: none;
       color: #e9e6e0;
       border: solid 0.5px #e9e6e0;
       font-size: 1.4em;
       padding: 8px;
+    }  
+
+    #git-btn:hover {
+      font-size: 18.5px;
+    }
+
+    #resume-btn:hover {
+      font-size: 18.5px;
     }
     /* End of Landing Page */
 
